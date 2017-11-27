@@ -36,7 +36,6 @@ def xframe_options_sameorigin(view_func):
         return resp
     return wraps(view_func)(wrapped_view)
 
-
 def xframe_options_exempt(view_func):
     """
     Modify a view function by setting a response variable that instructs
